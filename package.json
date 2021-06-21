@@ -1,0 +1,39 @@
+{
+  "name": "cronexp",
+  "version": "0.0.0",
+  "repository": "github:yarnaimo/cronexp",
+  "license": "MIT",
+  "author": "yamaimo <yarnaimo@gmail.com>",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "debug": "node --inspect -r ts-node/register",
+    "dev": "yarn ts-node src/index.ts",
+    "lint": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx}'",
+    "prepare": "yarn build",
+    "start": "NODE_ENV=production node dist/index.js",
+    "test": "NODE_ENV=test jest",
+    "ts-node": "ts-node"
+  },
+  "dependencies": {
+    "@sindresorhus/is": "^4.0.1",
+    "dayjs": "^1.10.5",
+    "lifts": "^0.1.4",
+    "remeda": "^0.0.28"
+  },
+  "devDependencies": {
+    "@arkweid/lefthook": "^0.7.6",
+    "@sindresorhus/tsconfig": "^1.0.2",
+    "@types/jest": "^26.0.23",
+    "@types/prettier": "^2.3.0",
+    "@yarnaimo/eslint-config": "^0.2.3",
+    "jest": "^27.0.4",
+    "prettier": "^2.3.1",
+    "sort-package-json": "^1.50.0",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
+    "tsd": "^0.17.0",
+    "type-fest": "^1.2.1",
+    "typescript": "^4.3.4"
+  }
+}

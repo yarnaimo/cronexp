@@ -1,0 +1,4 @@
+.eslintrc.js linguist-detectable=false
+.prettierrc.js linguist-detectable=false
+jest.config.js linguist-detectable=false
+jest.setup.js linguist-detectable=false
